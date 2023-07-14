@@ -12,7 +12,8 @@ function App() {
     creation: {
       name: "ROBLOX",
       dateCreated: "2007",
-      image: "https://imgur.com/iOtA0vX",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg?20220830054427",
     },
   });
   function handleSubmit(e) {
@@ -76,6 +77,40 @@ function App() {
         </div>
         <button type="submit">Submit</button>
       </form>
+      <div className="display-container">
+        <h2>Person:</h2>
+        <span>
+          First Name: <span className="data">{person.data.firstName}</span>
+        </span>
+        <span>
+          Last Name: <span className="data">{person.data.lastName}</span>
+        </span>
+        <span>
+          Age: <span className="data">{person.data.age}</span>
+        </span>
+        <span>
+          Gender: <span className="data">{person.data.gender}</span>
+        </span>
+        <h2>Creation:</h2>
+        <span>
+          Name: <span className="data">{person.creation.name}</span>
+        </span>
+        <span>
+          Date Created:
+          <span className="data">{person.creation.dateCreated}</span>
+        </span>
+        <span>
+          Image:
+          <span className="data">
+            <img
+              src={person.creation.image}
+              alt={"A picture of the person's creation."}
+              width={"50px"}
+              height={"50px"}
+            ></img>
+          </span>
+        </span>
+      </div>
     </div>
   );
 }
