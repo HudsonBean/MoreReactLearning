@@ -3,25 +3,33 @@ body {
   color: white;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container .person-container,
-.container .creation-container {
+.container form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.container .person-container label,
-.container .creation-container label {
+.container form .secondary-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container form .secondary-container .person-container,
+.container form .secondary-container .creation-container {
+  width: 10rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container form .secondary-container .person-container label,
+.container form .secondary-container .creation-container label {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
-.container .person-container input,
-.container .creation-container input {
+.container form .secondary-container .person-container input,
+.container form .secondary-container .creation-container input {
   background-color: white;
   border: 0px white solid;
   text-align: center;
@@ -30,9 +38,12 @@ body {
   font-size: 1.5rem;
   border-radius: 15px;
 }
-.container .person-container {
+.container form .secondary-container .person-container {
   margin-right: 2rem;
 }
-.container .creation-container {
+.container form .secondary-container .creation-container {
   margin-left: 2rem;
+}
+.container form button {
+  margin-top: 2.5rem;
 }/*# sourceMappingURL=App.css.map */

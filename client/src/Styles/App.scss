@@ -7,36 +7,50 @@ body {
   //Variables
   $container-spacing: 2rem; // This is squared
   //Main
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .person-container,
-  .creation-container {
+  form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    label {
-      $label-margin: 0.5rem;
-      margin-top: $label-margin * 2;
-      margin-bottom: $label-margin;
+    .secondary-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .person-container,
+      .creation-container {
+        width: 10rem;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        label {
+          $label-margin: 0.5rem;
+          margin-top: $label-margin * 2;
+          margin-bottom: $label-margin;
+        }
+        input {
+          background-color: white;
+          border: 0px white solid;
+          text-align: center;
+          width: 10rem;
+          height: 2.5rem;
+          font-size: 1.5rem;
+          border-radius: 15px;
+        }
+      }
+      .person-container {
+        margin-right: $container-spacing;
+      }
+      .creation-container {
+        margin-left: $container-spacing;
+      }
     }
-    input {
-      background-color: white;
-      border: 0px white solid;
-      text-align: center;
-      width: 10rem;
-      height: 2.5rem;
-      font-size: 1.5rem;
-      border-radius: 15px;
+
+    button {
+      margin-top: 2.5rem;
     }
-  }
-  .person-container {
-    margin-right: $container-spacing;
-  }
-  .creation-container {
-    margin-left: $container-spacing;
   }
 }
