@@ -7,5 +7,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container .person-container,
+.container .creation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+.container .person-container label,
+.container .creation-container label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.container .person-container input,
+.container .creation-container input {
+  background-color: white;
+  border: 0px white solid;
+  text-align: center;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+.container .person-container {
+  margin-right: 2rem;
+}
+.container .creation-container {
+  margin-left: 2rem;
 }/*# sourceMappingURL=App.css.map */

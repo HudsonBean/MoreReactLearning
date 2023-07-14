@@ -17,19 +17,36 @@ function App() {
   });
   return (
     <div className="container">
-      <h1>Person:</h1>
-      {/* First Name */}
-      <label htmlFor={"firstName"}>First Name:</label>
-      <input name={"firstName"} value={person.data.firstName}></input>
-      {/* Last Name */}
-      <label htmlFor={"firstName"}>First Name:</label>
-      <input name={"firstName"} value={person.data.firstName}></input>
-      {/* Age */}
-      <label htmlFor={"firstName"}>First Name:</label>
-      <input name={"firstName"} value={person.data.firstName}></input>
-      {/* Gender */}
-      <label htmlFor={"firstName"}>First Name:</label>
-      <input name={"firstName"} value={person.data.firstName}></input>
+      <div className="person-container">
+        <h1>Person:</h1>
+        {/* First Name */}
+        <label htmlFor={"firstName"}>First Name:</label>
+        <input name={"firstName"} value={person.data.firstName}></input>
+        {/* Last Name */}
+        <label htmlFor={"lastName"}>Last Name:</label>
+        <input name={"lastName"} value={person.data.lastName}></input>
+        {/* Age */}
+        <label htmlFor={"age"}>Age:</label>
+        <input name={"age"} value={person.data.age}></input>
+        {/* Gender */}
+        <label htmlFor={"gender"}>Gender:</label>
+        <input name={"gender"} value={person.data.gender}></input>
+      </div>
+      <div className="creation-container">
+        <h1>Creation:</h1>
+        {/* First Name */}
+        <label htmlFor={"firstName"}>First Name:</label>
+        <input name={"firstName"} value={person.data.firstName}></input>
+        {/* Last Name */}
+        <label htmlFor={"lastName"}>Last Name:</label>
+        <input name={"lastName"} value={person.data.lastName}></input>
+        {/* Age */}
+        <label htmlFor={"age"}>Age:</label>
+        <input name={"age"} value={person.data.age}></input>
+        {/* Gender */}
+        <label htmlFor={"gender"}>Gender:</label>
+        <input name={"gender"} value={person.data.gender}></input>
+      </div>
     </div>
   );
 }

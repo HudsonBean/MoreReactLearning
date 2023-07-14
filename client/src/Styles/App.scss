@@ -4,8 +4,39 @@ body {
 }
 
 .container {
+  //Variables
+  $container-spacing: 2rem; // This is squared
+  //Main
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+
+  .person-container,
+  .creation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+      $label-margin: 0.5rem;
+      margin-top: $label-margin * 2;
+      margin-bottom: $label-margin;
+    }
+    input {
+      background-color: white;
+      border: 0px white solid;
+      text-align: center;
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      border-radius: 15px;
+    }
+  }
+  .person-container {
+    margin-right: $container-spacing;
+  }
+  .creation-container {
+    margin-left: $container-spacing;
+  }
 }
